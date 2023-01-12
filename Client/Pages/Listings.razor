@@ -1,0 +1,56 @@
+﻿@page "/listings"
+@inject HttpClient Http
+@using SynthSearcherUI.Shared
+
+<PageTitle>Ottawa Synth Listings</PageTitle>
+<MudText Typo="Typo.h3" GutterBottom="true">Ottawa Synth Listings</MudText>
+@if (listings == null)
+{
+    <MudText>Loading listings...</MudText>
+    <MudProgressCircular Color="Color.Default" Indeterminate="true" />
+}
+else
+{
+    <MudTextField @bind-Value="SearchText" Label="Search" Variant="Variant.Outlined" Adornment="Adornment.End" AdornmentIcon="@Icons.Material.Filled.Search" AdornmentColor="Color.Secondary" Immediate="true" />
+    <MudTable Items="listings" Hover="true" SortLabel="Sort By" Elevation="0" Filter="SearchListings">
+        <ToolBarContent>
+            <MudText Typo="Typo.h6">Listings</MudText>
+            <MudSpacer />
+        </ToolBarContent>
+        <HeaderContent>
+            <MudTh><MudTableSortLabel Enabled="true" SortBy="new Func<Listing, object>(x => x.price)">Price</MudTableSortLabel></MudTh>
+            <MudTh><MudTableSortLabel Enabled="true" SortBy="new Func<Listing, object>(x => x.title)">Title</MudTableSortLabel></MudTh>
+            <MudTh><MudTableSortLabel Enabled="true" SortBy="new Func<Listing, object>(x => x.url)">Link</MudTableSortLabel></MudTh>
+            <MudTh><MudTableSortLabel Enabled="true" SortBy="new Func<Listing, object>(x => x.date_recorded)">Date Recorded</MudTableSortLabel></MudTh>
+            <MudTh><MudTableSortLabel Enabled="true" SortBy="new Func<Listing, object>(x => x.InStock)">In stock?</MudTableSortLabel></MudTh>
+        </HeaderContent>
+        <RowTemplate>
+            <MudTd DataLabel="Price">@context.FormattedPrice</MudTd>
+            <MudTd DataLabel="Title">@context.FormattedTitle</MudTd>
+            <MudTd DataLabel="Link"><MudLink Href="@context.url">@context.FormattedLink</MudLink></MudTd>
+            <MudTd DataLabel="Date Recorded">@context.FormattedRecordedDate</MudTd>
+            <MudTd DataLabel="InStock">@context.InStock</MudTd>
+        </RowTemplate>
+        <PagerContent>
+            <MudTablePager PageSizeOptions="new int[]{50, 100}" />
+        </PagerContent>
+    </MudTable>
+}
+@code {
+    private List<Listing>? listings;
+    public string SearchText { get; set; } = "";
+
+    protected override async Task OnInitializedAsync()
+    {
+        Console.WriteLine("Calling api....");
+        //Http.BaseAddress = new Uri("http://localhost:3000/");
+        listings = await Http.GetFromJsonAsync<List<Listing>>("Listing");
+        Console.WriteLine(listings);
+    }
+
+    public bool SearchListings(Listing listing)
+    {
+        return  listing.title != null && listing.title.ToUpperInvariant().Contains(SearchText.ToUpperInvariant()) ||
+                listing.InStock != null && listing.InStock.ToString().ToUpperInvariant().Contains(SearchText.ToUpperInvariant());
+    }
+}
