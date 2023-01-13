@@ -30,9 +30,9 @@ namespace SynthSearcherUI.Shared
         {
             get
             {
-                if (title?.Length > 53)
+                if (title?.Length > 83)
                 {
-                    return title.Substring(0, 25) + "...";
+                    return title.Substring(0, 80) + "...";
                 }
                 else
                 {

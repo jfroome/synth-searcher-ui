@@ -10,3 +10,15 @@ D:\vscodeprojects\SynthSearcherUI\Shared\obj\Debug\net6.0\SynthSearcherUI.Shared
 D:\vscodeprojects\SynthSearcherUI\Shared\obj\Debug\net6.0\refint\SynthSearcherUI.Shared.dll
 D:\vscodeprojects\SynthSearcherUI\Shared\obj\Debug\net6.0\SynthSearcherUI.Shared.pdb
 D:\vscodeprojects\SynthSearcherUI\Shared\obj\Debug\net6.0\ref\SynthSearcherUI.Shared.dll
+C:\Users\jf_st\Source\Repos\jfroome\synth-searcher-ui\Shared\bin\Debug\net6.0\SynthSearcherUI.Shared.deps.json
+C:\Users\jf_st\Source\Repos\jfroome\synth-searcher-ui\Shared\bin\Debug\net6.0\SynthSearcherUI.Shared.dll
+C:\Users\jf_st\Source\Repos\jfroome\synth-searcher-ui\Shared\bin\Debug\net6.0\SynthSearcherUI.Shared.pdb
+C:\Users\jf_st\Source\Repos\jfroome\synth-searcher-ui\Shared\obj\Debug\net6.0\SynthSearcherUI.Shared.csproj.AssemblyReference.cache
+C:\Users\jf_st\Source\Repos\jfroome\synth-searcher-ui\Shared\obj\Debug\net6.0\SynthSearcherUI.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jf_st\Source\Repos\jfroome\synth-searcher-ui\Shared\obj\Debug\net6.0\SynthSearcherUI.Shared.AssemblyInfoInputs.cache
+C:\Users\jf_st\Source\Repos\jfroome\synth-searcher-ui\Shared\obj\Debug\net6.0\SynthSearcherUI.Shared.AssemblyInfo.cs
+C:\Users\jf_st\Source\Repos\jfroome\synth-searcher-ui\Shared\obj\Debug\net6.0\SynthSearcherUI.Shared.csproj.CoreCompileInputs.cache
+C:\Users\jf_st\Source\Repos\jfroome\synth-searcher-ui\Shared\obj\Debug\net6.0\SynthSearcherUI.Shared.dll
+C:\Users\jf_st\Source\Repos\jfroome\synth-searcher-ui\Shared\obj\Debug\net6.0\refint\SynthSearcherUI.Shared.dll
+C:\Users\jf_st\Source\Repos\jfroome\synth-searcher-ui\Shared\obj\Debug\net6.0\SynthSearcherUI.Shared.pdb
+C:\Users\jf_st\Source\Repos\jfroome\synth-searcher-ui\Shared\obj\Debug\net6.0\ref\SynthSearcherUI.Shared.dll

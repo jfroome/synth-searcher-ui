@@ -1,20 +1,44 @@
 {
   "Files": [
     {
-      "Id": "D:\\vscodeprojects\\SynthSearcherUI\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "Id": "C:\\Users\\jf_st\\Source\\Repos\\jfroome\\synth-searcher-ui\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\blazor.webassembly.js",
       "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
     },
     {
-      "Id": "D:\\vscodeprojects\\SynthSearcherUI\\Client\\obj\\Debug\\net6.0\\build-gz\\z9hxpYN6.gz",
+      "Id": "C:\\Users\\jf_st\\Source\\Repos\\jfroome\\synth-searcher-ui\\Client\\obj\\Debug\\net6.0\\build-gz\\8IJ0IUxz.gz",
       "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
     },
     {
-      "Id": "D:\\vscodeprojects\\SynthSearcherUI\\Client\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\jf_st\\Source\\Repos\\jfroome\\synth-searcher-ui\\Client\\wwwroot\\Vecteezy-License-Information.pdf",
+      "PackagePath": "staticwebassets\\Vecteezy-License-Information.pdf"
+    },
+    {
+      "Id": "C:\\Users\\jf_st\\Source\\Repos\\jfroome\\synth-searcher-ui\\Client\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "D:\\vscodeprojects\\SynthSearcherUI\\Client\\wwwroot\\index.html",
+      "Id": "C:\\Users\\jf_st\\Source\\Repos\\jfroome\\synth-searcher-ui\\Client\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\jf_st\\Source\\Repos\\jfroome\\synth-searcher-ui\\Client\\wwwroot\\keys_icon.png",
+      "PackagePath": "staticwebassets\\keys_icon.png"
+    },
+    {
+      "Id": "C:\\Users\\jf_st\\Source\\Repos\\jfroome\\synth-searcher-ui\\Client\\wwwroot\\logo.jpg",
+      "PackagePath": "staticwebassets\\logo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\jf_st\\Source\\Repos\\jfroome\\synth-searcher-ui\\Client\\wwwroot\\logo.zip",
+      "PackagePath": "staticwebassets\\logo.zip"
+    },
+    {
+      "Id": "C:\\Users\\jf_st\\Source\\Repos\\jfroome\\synth-searcher-ui\\Client\\wwwroot\\synthesizer.png",
+      "PackagePath": "staticwebassets\\synthesizer.png"
+    },
+    {
+      "Id": "C:\\Users\\jf_st\\Source\\Repos\\jfroome\\synth-searcher-ui\\Client\\wwwroot\\vecteezy_synth-keyboard-midi-synthesiser-synthesizer-flat-color-icon_13552326.eps",
+      "PackagePath": "staticwebassets\\vecteezy_synth-keyboard-midi-synthesiser-synthesizer-flat-color-icon_13552326.eps"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.SynthSearcherUI.Client.Microsoft.AspNetCore.StaticWebAssets.props",
