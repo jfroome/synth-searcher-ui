@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "M2J1CoUpk1wUvWDrPE7MmyjrKzgAwgWlSLyNXW2qP3YwC5S7Bc6lD900RiyunApzMpq4W7dI0NWLd73TflnAgw==",
+  "dgSpecHash": "hujr9x+XJOk2+JPkMIa72B2/H7g6Lk0U+jIEDBhFzEZf5Qf5ZcgT2bnE7BeIhtZudCLvNz9vcZqmlAnD2uWHCg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jf_st\\Source\\Repos\\jfroome\\synth-searcher-ui\\Shared\\SynthSearcherUI.Shared.csproj",
+  "projectFilePath": "D:\\vscodeprojects\\SynthSearcherUI\\Shared\\SynthSearcherUI.Shared.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

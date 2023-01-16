@@ -8,23 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\jf_st\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Jackson\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jf_st\\Source\\Repos\\jfroome\\synth-searcher-ui\\Shared\\SynthSearcherUI.Shared.csproj",
+      "projectUniqueName": "D:\\vscodeprojects\\SynthSearcherUI\\Shared\\SynthSearcherUI.Shared.csproj",
       "projectName": "SynthSearcherUI.Shared",
-      "projectPath": "C:\\Users\\jf_st\\Source\\Repos\\jfroome\\synth-searcher-ui\\Shared\\SynthSearcherUI.Shared.csproj",
-      "packagesPath": "C:\\Users\\jf_st\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jf_st\\Source\\Repos\\jfroome\\synth-searcher-ui\\Shared\\obj\\",
+      "projectPath": "D:\\vscodeprojects\\SynthSearcherUI\\Shared\\SynthSearcherUI.Shared.csproj",
+      "packagesPath": "C:\\Users\\Jackson\\.nuget\\packages\\",
+      "outputPath": "D:\\vscodeprojects\\SynthSearcherUI\\Shared\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\jf_st\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Jackson\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -65,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

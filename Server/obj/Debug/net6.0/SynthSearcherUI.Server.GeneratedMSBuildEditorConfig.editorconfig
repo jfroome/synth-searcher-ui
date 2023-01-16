@@ -9,13 +9,13 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SynthSearcherUI.Server
 build_property.RootNamespace = SynthSearcherUI.Server
-build_property.ProjectDir = C:\Users\jf_st\Source\Repos\jfroome\synth-searcher-ui\Server\
+build_property.ProjectDir = d:\vscodeprojects\SynthSearcherUI\Server\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\jf_st\Source\Repos\jfroome\synth-searcher-ui\Server
+build_property.MSBuildProjectDirectory = d:\vscodeprojects\SynthSearcherUI\Server
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/jf_st/Source/Repos/jfroome/synth-searcher-ui/Server/Pages/Error.cshtml]
+[d:/vscodeprojects/SynthSearcherUI/Server/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

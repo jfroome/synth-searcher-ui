@@ -9,24 +9,32 @@
 }
 else
 {
-    <MudTextField @bind-Value="SearchText" Label="Search" Variant="Variant.Outlined" Adornment="Adornment.End" AdornmentIcon="@Icons.Material.Filled.Search" AdornmentColor="Color.Secondary" Immediate="true" />
+    <MudCard>
+        <MudCardContent>
+            <MudForm>
+                <MudStack>
+                    <MudTextField @bind-Value="SearchText" Label="Search" Variant="Variant.Outlined" Adornment="Adornment.End" AdornmentIcon="@Icons.Material.Filled.Search" AdornmentColor="Color.Secondary" Immediate="true" />
+                    <MudCheckBox @bind-Checked="InStock">In stock</MudCheckBox>
+                    <MudCheckBox @bind-Checked="NonZeroPrice">Only display non-zero prices</MudCheckBox>
+                </MudStack>
+            </MudForm>
+        </MudCardContent>
+    </MudCard>
     <MudTable Items="listings" Hover="true" SortLabel="Sort By" Elevation="0" Filter="SearchListings">
-        <ToolBarContent>
-            <MudText Typo="Typo.h6">Listings</MudText>
-            <MudSpacer />
-        </ToolBarContent>
         <HeaderContent>
             <MudTh><MudTableSortLabel Enabled="true" SortBy="new Func<Listing, object>(x => x.price)">Price</MudTableSortLabel></MudTh>
-            <MudTh><MudTableSortLabel Enabled="true" SortBy="new Func<Listing, object>(x => x.title)">
-                Title/Link
-            </MudTableSortLabel></MudTh>
+            <MudTh>
+                <MudTableSortLabel Enabled="true" SortBy="new Func<Listing, object>(x => x.title)">
+                    Title/Link
+                </MudTableSortLabel>
+            </MudTh>
             <MudTh><MudTableSortLabel Enabled="true" SortBy="new Func<Listing, object>(x => x.site)">Link</MudTableSortLabel></MudTh>
             <MudTh><MudTableSortLabel Enabled="true" SortBy="new Func<Listing, object>(x => x.date_recorded)">Date Recorded</MudTableSortLabel></MudTh>
             <MudTh><MudTableSortLabel Enabled="true" SortBy="new Func<Listing, object>(x => x.InStock)">In stock?</MudTableSortLabel></MudTh>
         </HeaderContent>
         <RowTemplate>
             <MudTd DataLabel="Price">@context.FormattedPrice</MudTd>
-            <MudTd DataLabel="Title/Link">@context.FormattedTitle</MudTd>
+            <MudTd DataLabel="Title">@context.FormattedTitle</MudTd>
             <MudTd><MudLink Target="_blank" Href="@context.url">@(context.site)...</MudLink></MudTd>
             <MudTd DataLabel="Date Recorded">@context.FormattedRecordedDate</MudTd>
             <MudTd DataLabel="InStock">
@@ -48,8 +56,10 @@ else
     </MudTable>
 }
 @code {
-    private List<Listing>? listings;
+    public List<Listing>? listings = new List<Listing>();
     public string SearchText { get; set; } = "";
+    public bool InStock { get; set; } = true;
+    public bool NonZeroPrice { get; set; } = true;
 
     protected override async Task OnInitializedAsync()
     {
@@ -59,7 +69,8 @@ else
 
     public bool SearchListings(Listing listing)
     {
-        return  listing.title != null && listing.title.ToUpperInvariant().Contains(SearchText.ToUpperInvariant()) ||
-                listing.InStock != null && listing.InStock.ToString().ToUpperInvariant().Contains(SearchText.ToUpperInvariant());
+        return listing.title != null && listing.title.ToUpperInvariant().Contains(SearchText.ToUpperInvariant()) &&
+                (listing.InStock != null && listing.InStock == InStock) &&
+                (!NonZeroPrice || (listing.price != null && listing.price > 0));
     }
 }
