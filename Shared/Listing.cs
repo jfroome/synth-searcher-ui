@@ -30,9 +30,9 @@ namespace SynthSearcherUI.Shared
         {
             get
             {
-                if (title?.Length > 83)
+                if (title?.Length > 63)
                 {
-                    return title.Substring(0, 80) + "...";
+                    return title.Substring(0, 60) + "...";
                 }
                 else
                 {
@@ -61,7 +61,7 @@ namespace SynthSearcherUI.Shared
         {
             get
             {
-                return date_recorded?.ToString("MM/dd/yyyy HH:mm") ?? "";
+                return date_recorded?.ToString("MM/dd/yyyy") ?? "";
             }
         }
 
