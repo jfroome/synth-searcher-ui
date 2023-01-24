@@ -11,10 +11,6 @@ namespace SynthSearcherUI.Server.Controllers
     [Route("[controller]")]
     public class ListingController : ControllerBase
     {
-        private static readonly string[] Summaries = new[]
-        {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-        };
 
         private readonly ILogger<ListingController> _logger;
 
